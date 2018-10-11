@@ -1,43 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>David Stocker, Developer</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-</head>
-<body>
-    <div id="header-bar">
-        <div id="center-bar">
-            <div id="element-1">
-                <h1>David Stocker</h1>
-            </div>
-            <div class="button" id="element-2">
-                <a href="contact.html">Contact</a>
-            </div>
-            <div class="button" id="element-3">
-                <a href="portfolio.html">Portfolio</a>
-            </div>
-            <div class="button" id="element-4">
-                <a href="index.html">About</a>
-            </div>
-        </div>
-    </div>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>David Stocker, Developer</title>
+
+  <!-- Pull in Bootstrap CSS and javascript -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+  <!-- Pull in local CSS -->
+
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Pull in fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
     
-    <div class="main-content">
-        <h2 class="teal-heading">About Me</h2>
-        <hr>
-        <img alt="David Stocker, at your service" id="profile-img" src="assets/images/profile-david-ubuntu.png">
-        <p class="text-margins">
-            My name is David Stocker, and I currently live in the Bon Air area of Chesterfield County, VA. I'm studying to become a full-stack web developer at the University of Richmond School of Professional and Continuing Studies. After dabbling with HTML, CSS, Python, MySQL, and PHP, I'm excited to finally take steps toward becomming a full-time web devloper!
-        </p>
-        <p class="text-margins">
-            From 2001 to 2015, I worked as a professional guitar transcriber and freelance editor in the music print publishing industry. During that time, I contributed to hundreds of published Guitar/Vocal songbooks. I also taught myself <a target="_blank" href="http://lilypond.org/">LilyPond</a> &ndash; a markup language and layout engine for music scoring. Using LilyPond is similar to using HTML. Learning LilyPond fostered my interest in coding and programming languages.
-        </p>
+</head>
+
+<body>
+
+  <!-- Begin Snippet Section
+
+*****    
+This section goes at the top of all pages - I can't wait to store these in separat files and "include" or "require" them to reduce duplication and errors!
+*****
+
+-->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <span class="navbar-brand mb-0 h1">
+      <h2>David Stocker</h2>
+    </span>
+    <span class="navbar-text">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item nav-left">
+          <a class="nav-link" href="index.html">About</a>
+        </li>
+        <li class="nav-item nav-left">
+          <a class="nav-link" href="portfolio.html">Gallery</a>
+        </li>
+        <li class="nav-item nav-left">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <a href="https://github.com/dbstocker" target="_blank" class="nav-link"><i class="fab fa-github nav-font"></i></a>
+        <li>
+        </li>
+        <a href="https://www.linkedin.com/in/david-stocker-aa207711/" target="_blank" class="nav-link"><i class="fab fa-linkedin-in nav-font"></i></a>
+        <li>
+          <a href="https://www.facebook.com/stocker.david" target="_blank" class="nav-link"><i class="fab fa-facebook nav-font"></i></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/dbstocker" target="_blank" class="nav-link"><i class="fab fa-twitter"></i></a>
+        <li>
+          <a href="assets/documents/front-end-developer.pdf" target="_blank" class="nav-link"><i class="fas fa-file nav-font"></i></a>
+        </li>
+        </li>
+      </ul>
+    </span>
+  </nav>
+
+  <!-- End Snippet Section -->
+
+  <!-- About Page content -->
+
+  <div class="main-content">
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h3>About Me</h3>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-sm-4">
+          <img class="img-fluid" src="assets/images/profile-david-ubuntu.png" alt="David Stocker, At Your Service!">
+        </div>
+        <div class="col-sm-8">
+          <p>
+            My name is David Stocker, and I currently live in the Bon Air area of Chesterfield County, VA.
+            I'm studying to become a full-stack web developer at the University of Richmond School of
+            Professional and Continuing Studies. After dabbling with HTML, CSS, Python, MySQL, and PHP, I'm
+            excited to finally take steps toward becomming a full-time web devloper!
+          </p>
+          <p>
+            From 2001 to 2015, I worked as a professional guitar transcriber and freelance editor in the
+            music print publishing industry. During that time, I contributed to hundreds of published
+            Guitar/Vocal songbooks. I also taught myself <a target="_blank" href="http://lilypond.org/">LilyPond</a>
+            – a markup language and layout engine for music scoring. Using LilyPond is similar to using
+            HTML. Learning LilyPond fostered my interest in coding and programming languages.
+          </p>
+        </div>
+      </div>
     </div>
-    <div class="footer">
-        <p id="copyright">Copyright &copy; 2018 David Stocker</p>
-    </div>
+  </div>
+  <div class="footer">
+    <p id="copyright">Copyright &copy; 2018 David Stocker</p>
+  </div>
+
 </body>
+
 </html>
