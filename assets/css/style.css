@@ -120,6 +120,7 @@ button {
 .tile img {
   width: 100%;
   height: 144px;
+  margin-bottom: 20px;
 }
 
 /* Style the button and place it in the middle of the container/image */
